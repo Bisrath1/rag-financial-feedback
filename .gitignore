@@ -1,0 +1,10 @@
+# Ignore data
+data/*
+!data/.gitkeep
+vector_store/*
+!vector_store/.gitkeep
+__pycache__/
+.ipynb_checkpoints/
+.env
+*.egg-info/
+*.pyc
