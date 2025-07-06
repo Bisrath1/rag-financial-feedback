@@ -1,0 +1,19 @@
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyter
+
+
+
+langchain
+chromadb
+sentence-transformers
+openai
+gradio  # or 
+streamlit
+
+sentence-transformers
+langchain
+chromadb

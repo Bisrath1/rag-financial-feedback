@@ -1,0 +1,21 @@
+# Ignore virtual env and dependencies
+venv/
+__pycache__/
+*.py[cod]
+
+# Ignore data files
+data/
+*.csv
+*.parquet
+*.pkl
+*.h5
+*.pt
+
+# Ignore vector stores
+vector_store/
+
+# Ignore notebooks output
+*.ipynb_checkpoints
+
+# Ignore system files
+.DS_Store
