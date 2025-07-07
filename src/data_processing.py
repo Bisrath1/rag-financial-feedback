@@ -1,11 +1,12 @@
-# # src/data_processing.py
-
+# src/data_processing.py
 import pandas as pd
 from langchain.text_splitter import RecursiveCharacterTextSplitter
+
 
 def load_data(path):
     df = pd.read_csv(path)
     return df
+
 
 def chunk_narratives(df, column='cleaned_narrative', chunk_size=300, chunk_overlap=50):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
@@ -32,8 +33,7 @@ if __name__ == "__main__":
 
 
 from sentence_transformers import SentenceTransformer
-import numpy as np
-import os
+
 
 def embed_chunks(chunks_df, model_name="all-MiniLM-L6-v2"):
     model = SentenceTransformer(model_name)
